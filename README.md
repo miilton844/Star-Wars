@@ -1,6 +1,6 @@
 # Star wars project
 
-Deployment : 
+Deployment : https://star-wars-zoomin.herokuapp.com/
 
 Please notice that the app might be asleep - so dont panic :) and try to launch again if it doesnt launch at the first time.
 
