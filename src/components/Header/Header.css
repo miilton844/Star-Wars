@@ -1,0 +1,11 @@
+
+body .container{
+    text-align: center;
+}
+
+#logo{
+    width:10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
