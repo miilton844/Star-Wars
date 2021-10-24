@@ -8,6 +8,9 @@ interface ApiResponse {
     results: object
 }
 
+interface chosenFilmIndex {
+    type: string,
+    payload: number
+}
 
-
-export type { FilmDetails, ApiResponse }
+export type { FilmDetails, ApiResponse, chosenFilmIndex }
