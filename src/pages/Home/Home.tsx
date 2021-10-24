@@ -27,14 +27,20 @@ const Home = () => {
         fetchFilms()
     }, [])
 
+    const openingPic =  process.env.PUBLIC_URL + "/deathStar.png"
+
+
     if (filmsArray.length > 0) {
         return (
             <div>
                 <Header></Header>
                 <div className='openning-paragraph'>
-                    <FontAwesomeIcon icon={faJedi} className='jedi-icon' />
+                    {/* <FontAwesomeIcon icon={faJedi} className='jedi-icon' /> */}
+                    <img src={openingPic}></img>
                     <h1>Choose your favorite movies</h1>
-                    <FontAwesomeIcon icon={faJedi} className='jedi-icon' />
+                    {/* <FontAwesomeIcon icon={faJedi} className='jedi-icon' /> */}
+                    <img src={openingPic}></img>
+
                 </div>
                 <div className="main-container">
                     <Toc filmsInfo={filmsArray} ></Toc>
