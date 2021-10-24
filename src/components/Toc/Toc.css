@@ -1,0 +1,33 @@
+body .toc{
+    margin:0rem;
+    text-align: center;
+    height:100%;
+    vertical-align: center;
+    background-color: black;
+    color:white
+}
+
+th, td{
+    vertical-align: middle;
+ }
+ 
+ .film-title:hover{
+    cursor: pointer;
+    background-color: #F0A500;
+}
+
+
+@media only screen and (max-width: 912px) {
+    body .toc {
+        margin: auto ;
+        margin-bottom:5rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .table-container{
+        padding:1rem;
+    }
+    
+  }
+
+    

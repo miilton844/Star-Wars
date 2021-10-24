@@ -12,7 +12,7 @@ const Toc: React.FC<Props> = (props) => {
         console.log(event)
         }
     
-    return (<div>
+        return (<div className='table-container'>
         <Table  bordered className='toc'>
             <thead>
                 <tr>
