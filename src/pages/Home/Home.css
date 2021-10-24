@@ -30,7 +30,7 @@ h1{
 }
 
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 1024px) {
     .main-container {
         flex-direction: column;
         justify-content:space-evenly;

@@ -1,13 +1,13 @@
 import { Navbar } from "react-bootstrap"
 import { Container } from "react-bootstrap"
-import './Header.css'
+import './Footer.css'
 
-const Header = () => {
+const Footer = () => {
   const logo =  process.env.PUBLIC_URL + "/star-wars-logo.png"
 
   return (
     <div>
-      <Navbar bg="dark" variant="dark" className='navbar-header'>
+      <Navbar bg="dark" variant="dark" className='navbar-footer'>
         <Container  >
           <Navbar.Brand>
             <img id='logo' src= {logo} alt='logo'></img>
@@ -19,4 +19,4 @@ const Header = () => {
 
 }
 
-export { Header }
+export { Footer }

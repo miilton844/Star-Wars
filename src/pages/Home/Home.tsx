@@ -5,6 +5,7 @@ import { getFilms } from "../../services/services"
 import { Header } from "../../components/Header/Header"
 import { faJedi } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Footer } from "../../components/Footer/Footer"
 
 import './Home.css'
 const Home = () => {
@@ -39,6 +40,7 @@ const Home = () => {
                     <Toc filmsInfo={filmsArray} ></Toc>
                     <FilmCard filmsInfo={filmsArray}></FilmCard>
                 </div>
+                <Footer></Footer>
             </div>
         )
     }

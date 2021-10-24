@@ -1,3 +1,7 @@
+body .navbar-footer{
+    text-align: center;
+    margin-top:2rem;
+}
 
 #logo{
     height:5rem;
