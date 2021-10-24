@@ -21,10 +21,10 @@ const Home = () => {
 
     if (filmsArray.length > 0) {
         return (
-            <div> 
+            <div>
                 <Header></Header>
                 <div className="main-container">
-                    <Toc></Toc>
+                    <Toc filmsInfo={filmsArray} ></Toc>
                     <FilmCard></FilmCard>
                 </div>
             </div>
