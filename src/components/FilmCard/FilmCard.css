@@ -1,0 +1,45 @@
+body .card-container{
+    height:100%;
+    border:2px solid black;
+    margin: 0 auto;  
+}
+
+
+img{
+    width:10rem;
+    height:15rem;
+    margin-top:1rem;    
+margin-bottom:1rem;     
+
+      }
+
+  .images{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+
+  .title{
+
+  }
+
+  .header{
+  }
+
+  @media only screen and (max-width: 912px) {
+    body .card-container{
+    width:initial;
+}
+.wrapper{
+    padding-left:1rem;
+    padding-right:1rem;
+
+}
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  }

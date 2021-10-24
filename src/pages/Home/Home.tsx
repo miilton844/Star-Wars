@@ -25,7 +25,7 @@ const Home = () => {
                 <Header></Header>
                 <div className="main-container">
                     <Toc filmsInfo={filmsArray} ></Toc>
-                    <FilmCard></FilmCard>
+                    <FilmCard filmsInfo={filmsArray}></FilmCard>
                 </div>
             </div>
         )
