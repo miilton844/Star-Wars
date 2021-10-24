@@ -20,13 +20,6 @@ margin-bottom:1rem;
   }
 
 
-  .title{
-
-  }
-
-  .header{
-  }
-
   @media only screen and (max-width: 912px) {
     body .card-container{
     width:initial;
