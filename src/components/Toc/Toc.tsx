@@ -1,18 +1,23 @@
 import { FilmDetails } from '../../interfaces/interfaces'
 import Table from 'react-bootstrap/Table';
 import './Toc.css'
+import { useDispatch } from 'react-redux'
+import { chooseFilm } from '../../redux/actions/chooseFilm'
+
+
 
 interface Props {
     filmsInfo: FilmDetails[]
 }
 
 const Toc: React.FC<Props> = (props) => {
+    const dispatch = useDispatch()
 
     const handleClick = (event: any) => {
-        console.log(event)
-        }
+        dispatch(chooseFilm(parseInt(event.target.parentElement.id)))
+    }
     
-        return (<div className='table-container'>
+    return (<div className='table-container'>
         <Table  bordered className='toc'>
             <thead>
                 <tr>

@@ -1,7 +1,8 @@
 body .card-container{
     height:100%;
+    width:40rem;
     border:2px solid black;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 
@@ -19,6 +20,17 @@ margin-bottom:1rem;
       justify-content: space-evenly;
   }
 
+
+  .title{
+      width:90%;
+
+  }
+
+  .header{
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-end;
+  }
 
   @media only screen and (max-width: 912px) {
     body .card-container{
