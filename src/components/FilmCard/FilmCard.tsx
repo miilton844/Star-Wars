@@ -18,6 +18,7 @@ const FilmCard: React.FC<Props> = (props) => {
             <Card.Body>
                 <div className='header'>
                     <Card.Title className='title'>{props.filmsInfo[chosenFilm].title}</Card.Title>
+                    <FavoriteButton filmsInfo={props.filmsInfo} ></FavoriteButton>
                 </div>
                 <Card.Text>
                     {props.filmsInfo[chosenFilm].opening_crawl}

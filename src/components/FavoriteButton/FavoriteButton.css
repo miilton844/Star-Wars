@@ -1,0 +1,23 @@
+.star{
+    font-size:2rem;
+    color:black;
+}
+
+.star-favorite{
+    color:red;
+}
+
+.star:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 912px) {
+    .star{
+        font-size:2rem;
+        color:black;
+    }
+    .star-favorite{
+        color:red;
+    }
+    
+    }
