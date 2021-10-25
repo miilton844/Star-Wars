@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTypedSelector } from "../../redux/hooks/useTypeSelector";
-import { FilmDetails } from '../../interfaces/interfaces'
+import { FilmDetails,FavoriteMovies } from '../../interfaces/interfaces'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import './FavoriteButton.css'
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const FavoriteButton: React.FC<Props> = (props) => {
-    const [favoriteMovies, setFavoriteMovies] = useState<{ [i: string]: boolean }>({});
+    const [favoriteMovies, setFavoriteMovies] = useState<FavoriteMovies>({});
     const [favoriteIconTag, setFavoriteIconTag] = useState<string>('');
 
     const chosenFilm = useTypedSelector(state => {
@@ -19,7 +19,7 @@ const FavoriteButton: React.FC<Props> = (props) => {
 
     useEffect(() => {
         if (Object.keys(JSON.parse(localStorage.getItem("favoritesObj") || '{}')).length === 0) {
-            let favoritesObj: { [i: string]: boolean } = {};
+            let favoritesObj: FavoriteMovies = {};
             for (let i = 0; i < props.filmsInfo.length; i++) {
                 favoritesObj[i.toString()] = false;
             }
@@ -33,7 +33,7 @@ const FavoriteButton: React.FC<Props> = (props) => {
     }, [chosenFilm, favoriteMovies]);
 
     const handleClick = () => {
-        let updatedFavorites: { [i: string]: boolean } = { ...favoriteMovies };
+        let updatedFavorites: FavoriteMovies = { ...favoriteMovies };
         updatedFavorites[chosenFilm.toString()] = !updatedFavorites[chosenFilm.toString()];
         setFavoriteMovies({ ...updatedFavorites });
         localStorage.setItem("favoritesObj", JSON.stringify(updatedFavorites));

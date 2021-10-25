@@ -8,9 +8,13 @@ interface ApiResponse {
     results: object
 }
 
-interface chosenFilmIndex {
+interface ChosenFilmIndex {
     type: string,
     payload: number
 }
 
-export type { FilmDetails, ApiResponse, chosenFilmIndex };
+interface FavoriteMovies {
+    [i: string]: boolean
+}
+
+export type { FilmDetails, ApiResponse, ChosenFilmIndex, FavoriteMovies };
