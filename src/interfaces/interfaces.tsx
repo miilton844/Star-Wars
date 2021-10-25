@@ -13,4 +13,4 @@ interface chosenFilmIndex {
     payload: number
 }
 
-export type { FilmDetails, ApiResponse, chosenFilmIndex }
+export type { FilmDetails, ApiResponse, chosenFilmIndex };

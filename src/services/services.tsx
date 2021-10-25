@@ -1,5 +1,5 @@
-import axios from 'axios'
-import { ApiResponse } from '../interfaces/interfaces'
+import axios from 'axios';
+import { ApiResponse } from '../interfaces/interfaces';
 
 const getFilms = async () => {
     const data = await axios.get<ApiResponse>('https://swapi.dev/api/films/')
@@ -9,6 +9,6 @@ const getFilms = async () => {
             return error.response;
         })
     return data;
-}
+};
 
-export { getFilms }
+export { getFilms };

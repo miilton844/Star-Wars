@@ -1,64 +1,57 @@
-body .card-container{
-    height:100%;
-    width:40rem;
-    border:2px solid black;
-    margin: 0 auto;
-    -webkit-tap-highlight-color:transparent;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+body .card-container {
+    width: 40rem;
+    border: 2px solid black;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
 
-
-img{
-    margin-top:1rem;    
-margin-bottom:1rem;     
-
-      }
-
-  .images{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-  }
-
-
-  .title{
-      width:90%;
-      color: #F0A500;
-      -webkit-text-stroke: 1px #FFE81F;
-      -webkit-text-fill-color: black;
-      font-size:1.5rem!important;
-
-  
-
-
-  }
-
-  .header{
-      display: flex;
-      flex-direction: row;
-      justify-content:flex-end;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    body .card-container{
-    width:initial;
-}
-.wrapper{
-    padding-left:1rem;
-    padding-right:1rem;
-
-}
-.images{
+.images {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
-  }
+
+body .title {
+    width: 90%;
+    -webkit-text-stroke: 1px #FFE81F;
+    -webkit-text-fill-color: black;
+    font-size: 1.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    body .card-container {
+        width: initial;
+    }
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .images>img {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}

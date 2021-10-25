@@ -1,5 +1,4 @@
-
-import { chosenFilmIndex } from '../../interfaces/interfaces'
+import { chosenFilmIndex } from '../../interfaces/interfaces';
 
 const chooseFilm = (state: number = 0, action: chosenFilmIndex) => {
     switch (action.type) {
@@ -9,7 +8,6 @@ const chooseFilm = (state: number = 0, action: chosenFilmIndex) => {
         default:
             return state;
     }
+};
 
-}
-
-export { chooseFilm }
+export { chooseFilm };

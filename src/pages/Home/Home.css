@@ -1,66 +1,55 @@
-.main-container{
+.openning-paragraph {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;    
-    margin-top:3rem;    
-}
-
-body .logo{
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-    padding:1rem;
-}
-
-.openning-paragraph{
-    display: flex;
-    flex-direction: row;    
     justify-content: center;
-    margin-top:2rem;
-    padding:1rem;
+    margin-top: 2rem;
+    padding: 1rem;
     align-items: center;
     -webkit-text-stroke: 1px #FFE81F;
     -webkit-text-fill-color: black;
-
 }
 
-.jedi-icon{
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.closing-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.closing-paragraph>h1, .openning-paragraph>h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.jedi-icon {
     font-size: 5rem;
-    margin-left:1rem;
-    margin-right:1rem;
-
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.meme{
+.meme {
     -webkit-text-stroke: 1px #FFE81F;
     -webkit-text-fill-color: black;
-    font-size:calc(1.375rem + 1.5vw);
-    margin-top:2rem;
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 2rem;
 }
-
-.closing-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top:2rem;
-}
-
 
 @media only screen and (max-width: 1024px) {
+    .openning-paragraph {
+        flex-direction: column;
+    }
     .main-container {
         flex-direction: column;
-        justify-content:space-evenly;
     }
-    .openning-paragraph{
+    .closing-paragraph {
         flex-direction: column;
     }
-
-    .closing-container{
-        flex-direction: column;
-    }
-    
-  }
-  
+}

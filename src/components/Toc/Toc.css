@@ -1,43 +1,33 @@
-body .toc{
-    margin:0rem;
+body .toc {
     text-align: center;
-    height:100%;
-    vertical-align: center;
+    height: 100%;
     background-color: black;
-    color:white
+    color: white;
 }
 
-th, td{
+th, td {
     vertical-align: middle;
- }
- 
- .film-title:hover{
+}
+
+.item-title:hover {
     cursor: pointer;
     background-color: #FFE81F;
-    color:black;
+    color: black;
 }
 
-.toc>thead{
+.toc>thead {
     background-color: black;
-    color:#FFE81F;
-    /* -webkit-text-stroke: 1px #FFE81F; */
-    /* -webkit-text-fill-color: black; */
-    /* font-size:2rem */
-
+    color: #FFE81F;
 }
-
 
 @media only screen and (max-width: 1024px) {
     body .toc {
-        margin: auto ;
-        margin-bottom:5rem;
-        padding-left:1rem;
-        padding-right:1rem;
+        margin: auto;
+        margin-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-    .table-container{
-        padding:1rem;
+    .table-container {
+        padding: 1rem;
     }
-    
-  }
-
-    
+}
