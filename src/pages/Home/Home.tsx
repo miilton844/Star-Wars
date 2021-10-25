@@ -27,7 +27,7 @@ const Home = () => {
         fetchFilms()
     }, [])
 
-    const openingPic =  process.env.PUBLIC_URL + "/deathStar.png"
+    const openingPic = process.env.PUBLIC_URL + "/deathStar.png"
 
 
     if (filmsArray.length > 0) {
@@ -37,7 +37,7 @@ const Home = () => {
                 <div className='openning-paragraph'>
                     {/* <FontAwesomeIcon icon={faJedi} className='jedi-icon' /> */}
                     <img src={openingPic}></img>
-                    <h1>Choose your favorite movies</h1>
+                    <h1>CHOOSE YOUR FAVORITE MOVIES</h1>
                     {/* <FontAwesomeIcon icon={faJedi} className='jedi-icon' /> */}
                     <img src={openingPic}></img>
 
@@ -46,6 +46,11 @@ const Home = () => {
                     <Toc filmsInfo={filmsArray} ></Toc>
                     <FilmCard filmsInfo={filmsArray}></FilmCard>
                 </div>
+                <div className='closing-container'>
+                <h1 className='meme'>MAY THE FORCE BE WITH YOU</h1>
+                <FontAwesomeIcon icon={faJedi} className='jedi-icon' />
+                </div>
+
                 <Footer></Footer>
             </div>
         )

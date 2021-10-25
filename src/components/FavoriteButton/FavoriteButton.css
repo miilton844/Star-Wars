@@ -1,22 +1,22 @@
-.star{
+.heart{
     font-size:2rem;
     color:black;
 }
 
-.star-favorite{
+.heart-favorite{
     color:red;
 }
 
-.star:hover{
+.heart:hover{
     cursor: pointer;
 }
 
 @media only screen and (max-width: 912px) {
-    .star{
+    .heart{
         font-size:2rem;
         color:black;
     }
-    .star-favorite{
+    .heart-favorite{
         color:red;
     }
     

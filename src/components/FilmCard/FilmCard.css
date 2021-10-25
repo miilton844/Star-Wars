@@ -30,6 +30,13 @@ margin-bottom:1rem;
 
   .title{
       width:90%;
+      color: #F0A500;
+      -webkit-text-stroke: 1px #FFE81F;
+      -webkit-text-fill-color: black;
+      font-size:1.5rem!important;
+
+  
+
 
   }
 

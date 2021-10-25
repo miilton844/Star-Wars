@@ -1,4 +1,4 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState, useEffect } from 'react'
 import { useTypedSelector } from "../../redux/hooks/useTypeSelector";
@@ -34,7 +34,7 @@ const FavoriteButton: React.FC<Props> = (props)=> {
         console.log(chosenFilm)
         let favoriteMoviesArray:any = {...favoriteMovies}
         const keyName: string = chosenFilm.toString()
-        setFavoriteIconTag(favoriteMoviesArray[keyName]===true ? "star star-favorite" : "star")
+        setFavoriteIconTag(favoriteMoviesArray[keyName]===true ? "heart heart-favorite" : "heart")
     }, [chosenFilm,favoriteMovies])
     
     const handleClick = () => {
@@ -48,7 +48,7 @@ const FavoriteButton: React.FC<Props> = (props)=> {
 
     return (
         <div >
-            <FontAwesomeIcon icon={faStar} className={favoriteIconTag} onClick={handleClick} />
+            <FontAwesomeIcon icon={faHeart} className={favoriteIconTag} onClick={handleClick} />
         </div >
     )
 }

@@ -13,7 +13,17 @@ th, td{
  
  .film-title:hover{
     cursor: pointer;
-    background-color: #F0A500;
+    background-color: #FFE81F;
+    color:black;
+}
+
+.toc>thead{
+    background-color: black;
+    color:#FFE81F;
+    /* -webkit-text-stroke: 1px #FFE81F; */
+    /* -webkit-text-fill-color: black; */
+    /* font-size:2rem */
+
 }
 
 
