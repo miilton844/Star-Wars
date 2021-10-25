@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import { useTypedSelector } from "../../redux/hooks/useTypeSelector";
-import { FilmDetails,FavoriteMovies } from '../../interfaces/interfaces'
+import { FilmDetails,FavoriteMovies } from '../../interfaces/interfaces';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import './FavoriteButton.css'
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import './FavoriteButton.css';
 
 interface Props {
     filmsInfo: FilmDetails[];

@@ -1,8 +1,8 @@
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 import Table from 'react-bootstrap/Table';
-import { FilmDetails } from '../../interfaces/interfaces'
-import { chooseFilm } from '../../redux/actions/chooseFilm'
-import './Toc.css'
+import { FilmDetails } from '../../interfaces/interfaces';
+import { chooseFilm } from '../../redux/actions/chooseFilm';
+import './Toc.css';
 
 interface Props {
     filmsInfo: FilmDetails[];
