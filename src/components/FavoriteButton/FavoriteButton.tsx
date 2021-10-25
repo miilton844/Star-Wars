@@ -9,38 +9,33 @@ interface Props {
     filmsInfo: FilmDetails[];
 }
 
-const FavoriteButton: React.FC<Props> = (props)=> {
-    const [favoriteMovies,setFavoriteMovies] = useState({});
-    const [favoriteIconTag,setFavoriteIconTag] = useState('');
-    
+const FavoriteButton: React.FC<Props> = (props) => {
+    const [favoriteMovies, setFavoriteMovies] = useState<{ [i: string]: boolean }>({});
+    const [favoriteIconTag, setFavoriteIconTag] = useState<string>('');
+
     const chosenFilm = useTypedSelector(state => {
         return state.chosenFilm;
     });
-    
+
     useEffect(() => {
-        if (Object.keys(JSON.parse(localStorage.getItem("favoritesObj")||'{}')).length===0) {
-            let favoritesObj: any = {};
+        if (Object.keys(JSON.parse(localStorage.getItem("favoritesObj") || '{}')).length === 0) {
+            let favoritesObj: { [i: string]: boolean } = {};
             for (let i = 0; i < props.filmsInfo.length; i++) {
-                const keyName: string = i.toString();
-                favoritesObj[keyName] = false;
+                favoritesObj[i.toString()] = false;
             }
             localStorage.setItem("favoritesObj", JSON.stringify(favoritesObj));
         }
-        const favoriteMovies = JSON.parse(localStorage.getItem("favoritesObj")||'{}');
-        setFavoriteMovies(favoriteMovies);
+        setFavoriteMovies(JSON.parse(localStorage.getItem("favoritesObj") || '{}'));
     }, [props.filmsInfo.length]);
 
     useEffect(() => {
-        let favoriteMoviesArray:any = {...favoriteMovies};
-        const keyName: string = chosenFilm.toString();
-        setFavoriteIconTag(favoriteMoviesArray[keyName]===true ? "heart heart-favorite" : "heart");
-    }, [chosenFilm,favoriteMovies]);
-    
+        setFavoriteIconTag(favoriteMovies[chosenFilm.toString()] === true ? "heart heart-favorite" : "heart");
+    }, [chosenFilm, favoriteMovies]);
+
     const handleClick = () => {
-        let updatedFavorites:any = {...favoriteMovies};
-        const keyName: string = chosenFilm.toString();
-        updatedFavorites[keyName] = !updatedFavorites[keyName];
-        setFavoriteMovies({...updatedFavorites});
+        let updatedFavorites: { [i: string]: boolean } = { ...favoriteMovies };
+        updatedFavorites[chosenFilm.toString()] = !updatedFavorites[chosenFilm.toString()];
+        setFavoriteMovies({ ...updatedFavorites });
         localStorage.setItem("favoritesObj", JSON.stringify(updatedFavorites));
     };
 
