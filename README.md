@@ -1,6 +1,6 @@
 # Star wars project
 
-Deployment : https://star-wars-zoomin.herokuapp.com/
+Deployment : https://star-wars-favorite-films.herokuapp.com/
 
 Please notice that the deployed app might be asleep, so the first time you try to launch it will probably hang up. Dont panic!!!! :), this is an expected behaviour of the app due to it being served in a freemium model. Please try to launch again after some seconds.
 
